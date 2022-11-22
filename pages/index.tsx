@@ -42,10 +42,10 @@ const Home: NextPage = () => {
             fill="#0F0F0F"
           />
         </svg> */}
-          {/* <video autoPlay loop muted>
-          <source src="puffer.mp4" type="video/mp4" width={50} height={50} />
-          Your browser does not support the video tag.
-        </video> */}
+          <video autoPlay loop muted>
+            <source src="puffer.mp4" type="video/mp4" width={50} height={50} />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
       <Footer />
