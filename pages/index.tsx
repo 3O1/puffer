@@ -1,86 +1,56 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import Image from 'next/image';
+import Footer from '../components/footer';
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
-
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and its API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <div className="flex items-center justify-center h-screen">
+        <div className="">
+          {/* test */}
+          {/* <svg
+          width="134"
+          height="85"
+          viewBox="0 0 134 85"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
-      </footer>
+          <mask id="mask"></mask>
+          <path
+            d="M24.1218 41.9688L42.0931 59.8635L60.0644 41.9688L42.0931 24.074L24.1218 41.9688Z"
+            fill="#0F0F0F"
+          />
+          <path
+            d="M48.8335 66.5743L66.8048 84.4691L84.776 66.5743L66.8048 48.6796L48.8335 66.5743Z"
+            fill="#0F0F0F"
+          />
+          <path
+            d="M97.7185 67.1053L115.69 85.0001L133.661 67.1053L115.69 49.2106L97.7185 67.1053Z"
+            fill="#0F0F0F"
+          />
+          <path
+            d="M48.2993 17.8945L66.2706 35.7893L84.2419 17.8945L66.2706 -0.000225709L48.2993 17.8945Z"
+            fill="#0F0F0F"
+          />
+          <path
+            d="M73.0076 42.4996L90.9788 60.3944L108.95 42.4996L90.9788 24.6049L73.0076 42.4996Z"
+            fill="#0F0F0F"
+          />
+          <path
+            d="M0 65.9865L17.9713 83.8812L35.9425 65.9865L17.9713 48.0917L0 65.9865Z"
+            fill="#0F0F0F"
+          />
+        </svg> */}
+          {/* <video autoPlay loop muted>
+          <source src="puffer.mp4" type="video/mp4" width={50} height={50} />
+          Your browser does not support the video tag.
+        </video> */}
+        </div>
+      </div>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
