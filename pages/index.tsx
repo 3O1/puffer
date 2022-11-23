@@ -7,7 +7,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Meetz</title>
+        <title>Puffer</title>
         <meta
           name="description"
           content="The official website of Puffer, a y00ts club."
