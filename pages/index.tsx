@@ -6,6 +6,7 @@ import Footer from '../components/footer';
 const Home: NextPage = () => {
   return (
     <div>
+      {/* head */}
       <Head>
         <title>Puffer</title>
         <meta
@@ -37,15 +38,24 @@ const Home: NextPage = () => {
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex items-center justify-center h-screen">
-        <div className="">
-          <video autoPlay loop muted playsInline>
-            <source src="puffer.mp4" type="video/mp4" width={50} height={50} />
-            Your browser does not support the video tag.
-          </video>
+
+      {/* main content */}
+      <main>
+        <div className="flex items-center justify-center h-screen">
+          <div className="">
+            <video autoPlay loop muted playsInline>
+              <source
+                src="puffer.mp4"
+                type="video/mp4"
+                width={50}
+                height={50}
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
-      </div>
-      <Footer />
+        <Footer />
+      </main>
     </div>
   );
 };
