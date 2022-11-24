@@ -55,8 +55,10 @@ const Home: NextPage = () => {
                 <h2 className="text-sm italic font-courierPrime">
                   LOS ANGELES
                 </h2>
-                <h2 className="pt-1 text-2xl md:text-xl bold">[PUFFER]</h2>
-                <h2 className="pt-8 text-xs md:pt-4">
+                <h2 className="pt-1 text-2xl md:text-xl bold font-courierPrime">
+                  [PUFFER]
+                </h2>
+                <h2 className="pt-8 text-xs md:pt-4 font-courierPrime">
                   “Lorem ipsum dolor sit amet consectetur. Dapibus in arcu
                   turpis mattis quis in massa ut. Id egestas viverra auctor at.
                   Quam interdum auctor tristique tellus id ut ultrices mattis.
@@ -65,7 +67,7 @@ const Home: NextPage = () => {
               </div>
 
               <div>
-                <h2 className="pt-10 text-sm font-bold md:pt-0 ">
+                <h2 className="pt-10 text-sm font-bold md:pt-0 font-courierPrime">
                   probably nothing.
                 </h2>
               </div>
