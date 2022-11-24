@@ -49,7 +49,7 @@ const Home: NextPage = () => {
             </video>
           </div>
 
-          <div className="flex items-end font-courierPrime h-1/2">
+          <div className="flex items-end font-courierPrime h-1/2 md:h-auto">
             <div className="bottom-0 items-end justify-between w-full px-6 mb-12 text-center md:fixed md:px-8 md:flex md:text-sm md:text-left">
               <div className="md:w-96">
                 <h2 className="text-sm italic font-courierPrime">
