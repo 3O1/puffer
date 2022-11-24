@@ -42,13 +42,33 @@ const Home: NextPage = () => {
       {/* main content */}
       <main>
         <div className="flex items-center justify-center h-screen">
-          <div className="">
-            <video autoPlay loop muted playsInline height={200} width={200}>
-              <source src="puffer.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+          <video autoPlay loop muted playsInline height={200} width={200}>
+            <source src="puffer.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div className="font-courierPrime ">
+          <div className="fixed bottom-0 items-end justify-between w-full px-6 mb-12 text-center md:px-8 md:flex md:text-sm md:text-left">
+            <div className="md:w-96">
+              <h2 className="text-sm italic font-courierPrime">LOS ANGELES</h2>
+              <h2 className="pt-1 text-2xl md:text-xl bold">[PUFFER]</h2>
+              <h2 className="pt-8 text-xs md:pt-4">
+                “Lorem ipsum dolor sit amet consectetur. Dapibus in arcu turpis
+                mattis quis in massa ut. Id egestas viverra auctor at. Quam
+                interdum auctor tristique tellus id ut ultrices mattis. Sit in
+                dolor nisi et.”
+              </h2>
+            </div>
+
+            <div>
+              <h2 className="pt-10 text-sm font-bold md:pt-0 ">
+                probably nothing.
+              </h2>
+            </div>
           </div>
         </div>
+
         <Footer />
       </main>
     </div>

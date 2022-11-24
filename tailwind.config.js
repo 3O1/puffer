@@ -15,6 +15,10 @@ module.exports = {
         pufferRed: '#FF3535',
         pufferGreen: '#27996B',
       },
+
+      fontFamily: {
+        courierPrime: ['Courier Prime', 'monospace'],
+      },
     },
   },
   plugins: [],
