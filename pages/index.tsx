@@ -50,7 +50,7 @@ const Home: NextPage = () => {
           </div>
 
           <div className="flex items-end select-none font-courierPrime h-1/2 md:h-auto">
-            <div className="bottom-0 items-end justify-between w-full px-5 mb-12 text-center md:fixed md:px-8 md:flex md:text-sm md:text-left">
+            <div className="bottom-0 items-end justify-between w-full px-5 mb-12 text-center lg:mb-14 md:fixed md:px-8 lg:px-12 xl:px-14 md:flex md:text-sm md:text-left">
               <div className="md:w-96">
                 <h2 className="text-sm italic font-courierPrime">
                   LOS ANGELES
