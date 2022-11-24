@@ -49,7 +49,7 @@ const Home: NextPage = () => {
         </div>
 
         <div className="font-courierPrime ">
-          <div className="fixed bottom-0 items-end justify-between w-full px-6 mb-12 text-center md:px-8 md:flex md:text-sm md:text-left">
+          <div className="bottom-0 items-end justify-between w-full px-6 mb-12 text-center md:fixed md:px-8 md:flex md:text-sm md:text-left">
             <div className="md:w-96">
               <h2 className="text-sm italic font-courierPrime">LOS ANGELES</h2>
               <h2 className="pt-1 text-2xl md:text-xl bold">[PUFFER]</h2>
