@@ -78,10 +78,26 @@ const Home: NextPage = () => {
                     placeholder="email@domain.com"
                     id=""
                   />
-                  <div className="flex justify-center">
-                    <div className="h-8 mt-2 bg-black w-72">
+                  <div className="flex justify-center ">
+                    <div className="h-8 mt-2 text-left bg-black w-72">
                       <button className="h-8 px-2 text-xs text-white">
-                        sign up
+                        {/* sign up */}
+                        <div className="flex items-center justify-between w-72">
+                          <h2>sign up</h2>
+                          <svg
+                            className="mr-5"
+                            width="9"
+                            height="9"
+                            viewBox="0 0 9 9"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M4.59184 9L3.57726 7.97321L6.24053 5.25446H0V3.74554H6.24053L3.57726 1.03125L4.59184 0L9 4.5L4.59184 9Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
                       </button>
                     </div>
                   </div>
