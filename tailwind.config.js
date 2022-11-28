@@ -16,6 +16,9 @@ module.exports = {
         pufferGreen: '#27996B',
       },
 
+      fontSize: {
+        xxs: '0.7rem',
+      },
       fontFamily: {
         courierPrime: ['Courier Prime', 'monospace'],
       },

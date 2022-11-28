@@ -66,10 +66,26 @@ const Home: NextPage = () => {
                 </h2>
               </div>
 
-              <div>
-                <h2 className="pt-10 text-sm font-bold md:pt-0 font-courierPrime">
-                  probably nothing.
-                </h2>
+              <div className="pt-12 md:pt-0">
+                <div>
+                  <h2 className="italic text-xxs">
+                    Be the first to know about upcoming drops.
+                  </h2>
+                  <input
+                    type="text"
+                    className="h-8 p-2 mt-2 text-xs bg-white border border-black w-72"
+                    name=""
+                    placeholder="email@domain.com"
+                    id=""
+                  />
+                  <div className="flex justify-center">
+                    <div className="h-8 mt-2 bg-black w-72">
+                      <button className="h-8 px-2 text-xs text-white">
+                        sign up
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
