@@ -1,9 +1,31 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import { useState } from 'react';
 import Footer from '../components/footer';
 
 const Home: NextPage = () => {
+  const [email, setEmail] = useState('');
+  const [buttonText, setButtonText] = useState('sign up');
+  const [submitted, setSubmitted] = useState(false);
+  const [placeholder, setPlaceholder] = useState('email@domain.com');
+
+  function handleEmail() {
+    if (email.length > 0) {
+      if (email.includes('@') && email.includes('.')) {
+        console.log('valid');
+        // sendEmail(email);
+        setSubmitted(true);
+        setEmail('');
+        setButtonText('submitted');
+        setPlaceholder('thank you');
+      } else {
+        alert('Please enter a valid email');
+        setEmail('');
+      }
+    }
+  }
+
   return (
     <div>
       {/* head */}
@@ -17,7 +39,7 @@ const Home: NextPage = () => {
         <meta property="og:title" content="Puffer" />
         <meta
           property="og:image"
-          content="https://meetz-media-downloads.s3.amazonaws.com/meetz_app_icon.png"
+          content="https://puffer-la.s3.us-west-1.amazonaws.com/PufferThumbnail.png"
         />
         <meta
           property="og:description"
@@ -33,7 +55,7 @@ const Home: NextPage = () => {
         />
         <meta
           name="twitter:image"
-          content="https://meetz-media-downloads.s3.amazonaws.com/meetz_app_icon.png"
+          content="https://puffer-la.s3.us-west-1.amazonaws.com/PufferThumbnail.png"
         />
 
         <link rel="icon" href="/favicon.ico" />
@@ -73,19 +95,36 @@ const Home: NextPage = () => {
                   </h2>
                   <input
                     type="text"
-                    className="h-8 p-2 mt-2 text-xs bg-white border border-black w-72"
+                    className="h-8 p-2 mt-2 text-xs bg-white border border-black outline-none w-72"
                     name=""
-                    placeholder="email@domain.com"
+                    placeholder={placeholder}
                     id=""
+                    onChange={(e) => setEmail(e.target.value)}
+                    value={email}
+                    onKeyDown={(e) => {
+                      e.key === 'Enter' ? handleEmail() : null;
+                    }}
+                    disabled={submitted}
                   />
                   <div className="flex justify-center ">
-                    <div className="h-8 mt-2 text-left bg-black w-72">
-                      <button className="h-8 px-2 text-xs text-white">
+                    <div
+                      className={`${
+                        submitted ? 'bg-green-600' : 'bg-black'
+                      }  'h-8 mt-2 text-left w-72 hover:opacity-95'`}
+                    >
+                      <button
+                        className="h-8 px-2 text-xs text-white"
+                        onClick={handleEmail}
+                        disabled={submitted}
+                      >
                         {/* sign up */}
                         <div className="flex items-center justify-between w-72">
-                          <h2>sign up</h2>
+                          <h2>{buttonText}</h2>
                           <svg
-                            className="mr-5"
+                            // className="mr-5"
+                            className={`${
+                              submitted ? 'opacity-0 mr-5' : 'opacity-100 mr-5'
+                            }  ''`}
                             width="9"
                             height="9"
                             viewBox="0 0 9 9"
